@@ -1,8 +1,8 @@
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask_script import Manager
-from flask_migrate import Migrate, MigrateCommand
+#from flask.ext.sqlalchemy import SQLAlchemy
+#from flask_script import Manager
+#from flask_migrate import Migrate, MigrateCommand
 from final import *
 import os
 import plotly as py
