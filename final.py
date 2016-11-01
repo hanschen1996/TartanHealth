@@ -1,4 +1,4 @@
-import httplib
+import http.client
 import time
 
 #Implemented sickTypeCounts per day 2:40
@@ -241,7 +241,7 @@ def getDate():
     return (month, day)
     
 def validate(andrewId):
-    conn = httplib.HTTPConnection("apis.scottylabs.org")
+    conn = http.client.HTTPConnection("apis.scottylabs.org")
     link = "/directory/v1/andrewID/" + andrewId
     conn.request("HEAD", link)
     res = conn.getresponse()
